@@ -10,7 +10,7 @@ node
     sh "docker build -t jenkinsfile_image_scm /home/ec2-user"
     
     stage "4. Run the container"
-    sh "docker run -dit --name jenkinsfile_container jenkinsfile_image_scm"
+    sh "docker run -dit --name jenkinsfile_container_scm jenkinsfile_image_scm"
     
     stage "5. Push the image"
     sh "docker login --username odesha --password Welcome@9"
